@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,
+    minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="../wechat/css/iconfont.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #top{
+            height: 25px;
+            background-color: #999999;
+        }
+        .time{
+            height: 25px;
+            width: 100px;
+            line-height: 25px;
+            float: left;
+        }
+        .time2{
+            height: 25px;
+            width: 60px;
+            line-height: 25px;
+            float: right;
+        }
+        .time1{
+            height: 25px;
+            width: 50px;
+            line-height: 25px;
+            font-size: 20px;
+            float: left;
+            margin-left: 60px;
+        }
+        .test{
+            line-height: 25px;
+            font-size: 20px;
+        }
+        #wrap .tile{
+            height: 160px;
+            width: 375px;
+
+        }
+        .tile1{
+            height: 30px;
+            width: 30px;
+            margin-right: 5px;
+            background-image: url("../wechat/img/相机.png");
+            background-size: 30px 30px;
+            position: relative;
+            left: 325px;
+            top: 7px;
+        }
+        .tile2{
+            height: 55px;
+            background-image: url("../wechat/img/微信图片_20190520100409.jpg");
+            background-size: 55px 55px;
+            background-repeat: no-repeat;
+            margin-top: 35px;
+            margin-left: 20px;
+        }
+        .c{
+            height: 431px;
+            width: 375px;
+            overflow: scroll;
+        }
+        .c1{
+            height: 10px;
+            line-height: 10px;
+            background-color: #999999;
+        }
+        #wrap .b{
+            position: revert;
+            list-style: none;
+            height: 50px;
+            width: 375px;
+            border-bottom: solid 1px black;
+        }
+        #wrap .b li {
+            height: 50px;
+            line-height: 50px;
+            position: revert;
+        }
+        #wrap .b li div{
+            height: 50px;
+            width: 375px;
+            display: flex;
+        }
+        #wrap .b1{
+            position: revert;
+            list-style: none;
+            height: 200px;
+            width: 375px;
+            border-bottom: solid 1px black;
+        }
+        #wrap .b1 li {
+            height: 50px;
+            line-height: 50px;
+            position: revert;
+        }
+        #wrap .b1 li div{
+            height: 50px;
+            width: 375px;
+            display: flex;
+        }
+        #wrap .b2{
+            position: revert;
+            list-style: none;
+            height: 50px;
+            width: 375px;
+            border-bottom: solid 1px black;
+        }
+        #wrap .b2 li {
+            height: 50px;
+            line-height: 50px;
+            position: revert;
+        }
+        #wrap .b2 li div{
+            height: 50px;
+            width: 375px;
+            display: flex;
+        }
+        .di1{
+            width: 300px;
+            height: 50px;
+            border-bottom:  solid 1px #999999;
+            margin-left: 10px;
+        }
+        .mang{
+            display: flex;
+            height: 50px;
+            background-color: #999999;
+        }
+        .mang div{
+            flex: 1;
+            text-align: center;
+        }
+        .tu{
+            line-height: 50px;
+            font-size: 30px;
+        }
+        a{
+            color: #000;
+            text-decoration-line: none;
+        }
+        #wrap .b li .di{
+            height: 50px;
+            width: 55px;
+            margin-top: 6px;
+            margin-left: 6px;
+
+        }
+        #wrap .b1 li .di{
+            height: 50px;
+            width: 55px;
+            margin-top: 5px;
+            margin-left: 6px;
+
+        }
+        #wrap .b2 li .di{
+            height: 50px;
+            width: 55px;
+            margin-top: 5px;
+            margin-left: 6px;
+
+        }
+        #wrap .b li .di{
+            background-image: url("../wechat/img/支付.png");
+            background-size: 30px 30px;
+            background-repeat: no-repeat;
+        }
+        #wrap .b1 li:nth-child(1) .di{
+            background-image: url("../wechat/img/收 藏.png");
+            background-size: 35px 35px;
+            background-repeat: no-repeat;
+        }
+        #wrap .b1 li:nth-child(2) .di{
+            background-image: url("../wechat/img/相册.png");
+            background-size: 35px 35px;
+            background-repeat: no-repeat;
+        }
+
+        #wrap .b1 li:nth-child(3) .di{
+            background-image: url("../wechat/img/卡包.png");
+            background-size: 35px 35px;
+            background-repeat: no-repeat;
+        }
+        #wrap .b1 li:nth-child(4) .di{
+            background-image: url("../wechat/img/表情.png");
+            background-size: 35px 35px;
+            background-repeat: no-repeat;
+        }
+        #wrap .b2 li .di{
+            background-image: url("../wechat/img/设置.png");
+            background-size: 35px 35px;
+            background-repeat: no-repeat;
+        }
+        .tile2 p:nth-child(1){
+            height: 30px;
+            line-height: 30px;
+            margin-left: 80px;
+        }
+        .tile2 p:nth-child(2){
+            height: 10px;
+            line-height: 10px;
+            font-size: 10px;
+            margin-left: 80px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="top">
+            <div class="time">
+                <span class=" iconfont test">&#xe620;</span>
+                <span class=" iconfont test">&#xe620;</span>
+            </div>
+            <div class="time1">4:00</div>
+            <div class="time2">
+                <span class=" iconfont test" style="font-size: 23px;line-height: 25px">&#xe606;</span>
+                <span class=" iconfont test" style="font-size: 15px;line-height: 25px">&#xe702;</span>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="tile1"></div>
+            <div class="tile2">
+                <p>漠然</p>
+                <p>微信号：2820888548</p>
+            </div>
+        </div>
+        <div class="c">
+            <div class="c1"></div>
+            <ul class="b">
+                <li>
+                    <div >
+                        <div class="di"></div>
+                        <div class="di1">
+                            <p>朋友圈</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="c1"></div>
+            <ul class="b1">
+                <li>
+                    <div>
+                        <div class="di"></div>
+                        <div class="di1">
+                            <p>收藏</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="di"></div>
+                        <div class="di1">
+                            <p>相册</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="di"></div>
+                        <div class="di1">
+                            <p>卡包</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="di"></div>
+                        <div class="di1">
+                            <p>表情</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="c1"></div>
+            <ul class="b2">
+                <li>
+                    <div >
+                        <div class="di"></div>
+                        <div class="di1">
+                            <p>设置</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="mang">
+            <div>
+                <span class="iconfont tu">
+                    <a href="../wechat/微信1.html">&#xe64c;</a>
+                </span>
+            </div>
+            <div>
+                <span class="iconfont tu">
+                    <a href="../wechat/微信2.html">&#xe636;</a>
+                </span>
+            </div>
+            <div>
+                <span class="iconfont tu">
+                    <a href="../wechat/微信3.html">&#xe6ed;</a>
+                </span>
+            </div>
+            <div>
+                <span class="iconfont tu">
+                    &#xe758;
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

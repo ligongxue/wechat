@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,
+    minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="../wechat/css/iconfont.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #top{
+            height: 25px;
+            background-color: #999999;
+        }
+        .time{
+            height: 25px;
+            width: 100px;
+            line-height: 25px;
+            float: left;
+        }
+        .time2{
+            height: 25px;
+            width: 60px;
+            line-height: 25px;
+            float: right;
+        }
+        .time1{
+            height: 25px;
+            width: 50px;
+            line-height: 25px;
+            font-size: 20px;
+            float: left;
+            margin-left: 60px;
+        }
+        .test{
+            line-height: 25px;
+            font-size: 20px;
+        }
+        #wrap .tile{
+            height: 38px;
+            background-color: #999999;
+        }
+        .tile1{
+            height: 38px;
+            width: 40px;
+            line-height: 40px;
+            float: left;
+            font-size: 20px;
+            margin-left: 5px;
+        }
+        .tile2{
+            height: 38px;
+            width: 100px;
+            line-height: 40px;
+            float: right;
+        }
+        .test1{
+            line-height: 38px;
+            font-size: 27px;
+        }
+        .a{
+            width: 140px;
+            height: 260px;
+            border: solid 1px black;
+            position: absolute;
+            top: 80px;
+            right: 10px;
+            background-color: #999999;
+            display: none;
+        }
+        .ul{
+            width: 130px;
+            height: 260px;
+            list-style: none;
+        }
+        .li{
+            height: 50px;
+            width: 130px;
+            border-bottom: solid 1px black;
+            line-height: 50px;
+            margin-left: 5px;
+        }
+        .tile2 .test1:nth-child(2):hover .a{
+            display: block;
+        }
+        .test3{
+            line-height: 50px;
+            font-size: 20px;
+
+        }
+        .c{
+            height: 553px;
+            width: 375px;
+            overflow: scroll;
+        }
+        .c1{
+            height: 25px;
+            line-height: 25px;
+            background-color: #999999;
+        }
+        #wrap .b{
+            position: revert;
+            list-style: none;
+            height: 200px;
+            width: 375px;
+            border-bottom: solid 1px black;
+        }
+        #wrap .b li {
+            height: 50px;
+            line-height: 50px;
+            position: revert;
+        }
+        #wrap .b li div{
+            height: 50px;
+            width: 375px;
+            display: flex;
+        }
+        #wrap .b1{
+            position: revert;
+            list-style: none;
+            height: 100px;
+            width: 375px;
+            border-bottom: solid 1px black;
+        }
+        #wrap .b1 li {
+            height: 50px;
+            line-height: 50px;
+            position: revert;
+        }
+        #wrap .b1 li div{
+            height: 50px;
+            width: 375px;
+            display: flex;
+        }
+        #wrap .b2{
+            position: revert;
+            list-style: none;
+            height: 100px;
+            width: 375px;
+            border-bottom: solid 1px black;
+        }
+        #wrap .b2 li {
+            height: 50px;
+            line-height: 50px;
+            position: revert;
+        }
+        #wrap .b2 li div{
+            height: 50px;
+            width: 375px;
+            display: flex;
+        }
+        #wrap .b3{
+            position: revert;
+            list-style: none;
+            height: 100px;
+            width: 375px;
+            border-bottom: solid 1px black;
+        }
+        #wrap .b3 li {
+            height: 50px;
+            line-height: 50px;
+            position: revert;
+        }
+        #wrap .b3 li div{
+            height: 50px;
+            width: 375px;
+            display: flex;
+        }
+        #wrap .b4{
+            position: revert;
+            list-style: none;
+            height: 100px;
+            width: 375px;
+            border-bottom: solid 1px black;
+        }
+        #wrap .b4 li {
+            height: 50px;
+            line-height: 50px;
+            position: revert;
+        }
+        #wrap .b4 li div{
+            height: 50px;
+            width: 375px;
+            display: flex;
+        }
+        .di1{
+            width: 300px;
+            height: 50px;
+            border-bottom:  solid 1px #999999;
+
+            margin-left: 10px;
+        }
+        .mang{
+            display: flex;
+            height: 50px;
+            background-color: #999999;
+        }
+        .mang div{
+            flex: 1;
+            text-align: center;
+        }
+        .tu{
+            line-height: 50px;
+            font-size: 30px;
+        }
+        a{
+            color: #000;
+            text-decoration-line: none;
+        }
+        #wrap .b li .di{
+            height: 50px;
+            width: 55px;
+            margin-top: 6px;
+            margin-left: 6px;
+
+        }
+        #wrap .b1 li .di{
+            height: 50px;
+            width: 55px;
+            margin-top: 5px;
+            margin-left: 6px;
+
+        }
+        #wrap .b2 li .di{
+            height: 50px;
+            width: 55px;
+            margin-top: 5px;
+            margin-left: 6px;
+
+        }
+        #wrap .b3 li .di{
+            height: 50px;
+            width: 55px;
+            margin-top: 5px;
+            margin-left: 6px;
+
+        }
+        #wrap .b4 li .di{
+            height: 50px;
+            width: 55px;
+            margin-top: 5px;
+            margin-left: 6px;
+
+        }
+        #wrap .b li:nth-child(1) .di{
+            background-image: url("../wechat/img/新朋友 (1).png");
+            background-size: 35px 35px;
+            background-repeat: no-repeat;
+        }
+        #wrap .b li:nth-child(2) .di{
+            background-image: url("../wechat/img/群聊.png");
+            background-size: 35px 35px;
+            background-repeat: no-repeat;
+        }
+        #wrap .b li:nth-child(3) .di{
+            background-image: url("../wechat/img/标签.png");
+            background-size: 35px 35px;
+            background-repeat: no-repeat;
+        }
+        #wrap .b li:nth-child(4) .di{
+            background-image: url("../wechat/img/公众号.png");
+            background-size: 35px 35px;
+            background-repeat: no-repeat;
+        }
+        #wrap .b1 li:nth-child(1) .di{
+            background-image: url("img/5cdd77b5Ncd853517.jpg!q90!cc_590x470.webp");
+            background-size: 40px 40px;
+            background-repeat: no-repeat;
+        }
+        #wrap .b1 li:nth-child(2) .di{
+            background-image: url("../wechat/img/微信图片_20190520100409.jpg");
+            background-size: 40px 40px;
+            background-repeat: no-repeat;
+        }
+
+        #wrap .b2 li:nth-child(1) .di{
+            background-image: url("../wechat/img/QQ图片20190519181810.jpg");
+            background-size: 40px 40px;
+            background-repeat: no-repeat;
+        }
+        #wrap .b2 li:nth-child(2) .di{
+            background-image: url("../wechat/img/微信图片_20190520100409.jpg");
+            background-size: 40px 40px;
+            background-repeat: no-repeat;
+        }
+        #wrap .b3 li:nth-child(1) .di{
+            background-image: url("../wechat/img/fd13338bd767b72f.jpg");
+            background-size: 40px 40px;
+            background-repeat: no-repeat;
+        }
+        #wrap .b3 li:nth-child(2) .di{
+            background-image: url("../wechat/img/微信图片_20190520100409.jpg");
+            background-size: 40px 40px;
+            background-repeat: no-repeat;
+        }
+        #wrap .b4 li:nth-child(1) .di{
+            background-image: url("../wechat/img/fd13338bd767b72f.jpg");
+            background-size: 40px 40px;
+            background-repeat: no-repeat;
+        }
+        #wrap .b4 li:nth-child(2) .di{
+            background-image: url("../wechat/img/微信图片_20190520100409.jpg");
+            background-size: 40px 40px;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="top">
+            <div class="time">
+                <span class=" iconfont test">&#xe620;</span>
+                <span class=" iconfont test">&#xe620;</span>
+            </div>
+            <div class="time1">4:00</div>
+            <div class="time2">
+                <span class=" iconfont test" style="font-size: 23px;line-height: 25px">&#xe606;</span>
+                <span class=" iconfont test" style="font-size: 15px;line-height: 25px">&#xe702;</span>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="tile1">
+                微信
+            </div>
+            <div class="tile2">
+                <span class=" iconfont test1">&#xe637;&nbsp;&nbsp;&nbsp;</span>
+                <span class=" iconfont test1">&#xe68a;
+                    <div class="a">
+                        <ul class="ul">
+                            <li class="li"><span class="iconfont test3">&#xe64c;发起群聊</span></li>
+                            <li class="li"><span class="iconfont test3">&#xe65e;添加朋友</span></li>
+                            <li class="li"><span class="iconfont test3">&#xe650;扫一扫</span></li>
+                            <li class="li"><span class="iconfont test3">&#xe600;收付款</span></li>
+                            <li class="li"><span class="iconfont test3">&#xe608;帮助与反馈</span></li>
+                        </ul>
+                    </div>
+                </span>
+            </div>
+        </div>
+        <div class="c">
+            <ul class="b">
+                <li>
+                    <div >
+                        <div class="di"></div>
+                        <div class="di1">
+                            <p>新朋友</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div >
+                        <div class="di"></div>
+                        <div class="di1">
+                            <p>群聊</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div >
+                        <div class="di"></div>
+                        <div class="di1">
+                            <p>标签</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div >
+                        <div class="di"></div>
+                        <div class="di1">
+                            <p>公众号</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="c1"></div>
+            <ul class="b1">
+                <li>
+                    <div>
+                        <div class="di"></div>
+                        <div class="di1">
+                            <p>大漠</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="di"></div>
+                        <div class="di1">
+                            <p>漠然</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="c1"></div>
+            <ul class="b2">
+                <li>
+                    <div >
+                        <div class="di"></div>
+                        <div class="di1">
+                            <p>回首</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div >
+                        <div class="di"></div>
+                        <div class="di1">
+                            <p>漠然</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="c1"></div>
+            <ul class="b3">
+                <li>
+                    <div>
+                        <div class="di"></div>
+                        <div class="di1">
+                            <p>逝去时光</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div >
+                        <div class="di"></div>
+                        <div class="di1">
+                            <p>漠然</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="c1"></div>
+            <ul class="b4">
+                <li>
+                    <div >
+                        <div class="di"></div>
+                        <div class="di1">
+                            <p>落花</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div >
+                        <div class="di"></div>
+                        <div class="di1">
+                            <p>漠然</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="mang">
+            <div>
+                <span class="iconfont tu">
+                    <a href="../wechat/微信1.html">&#xe64c;</a>
+                </span>
+            </div>
+            <div>
+                <span class="iconfont tu">
+                    &#xe636;
+                </span>
+            </div>
+            <div>
+                <span class="iconfont tu">
+                    <a href="微信3.html">&#xe6ed;</a>
+                </span>
+            </div>
+            <div>
+                <span class="iconfont tu">
+                    <a href="微信4.html">&#xe758;</a>
+                </span>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
